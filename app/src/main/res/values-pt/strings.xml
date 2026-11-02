@@ -1,0 +1,137 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Amigo Secreto</string>
+
+    <string name="action_back">Voltar</string>
+    <string name="action_cancel">Cancelar</string>
+    <string name="action_save">Guardar</string>
+    <string name="action_ok">OK</string>
+    <string name="action_delete">Eliminar</string>
+    <string name="action_more">Mais opções</string>
+    <string name="action_pick_date">Escolher</string>
+    <string name="action_clear_date">Limpar data</string>
+
+    <string name="groups_title">Amigo Secreto 🎅</string>
+    <string name="groups_new">Novo grupo</string>
+    <string name="groups_empty_title" tools:ignore="Typos">Ho ho ho!</string>
+    <string name="groups_empty_message">Cria o teu primeiro grupo, adiciona os participantes e deixa a app sortear quem oferece a quem.</string>
+    <string name="group_status_drawn">Sorteado</string>
+    <plurals name="participant_count">
+        <item quantity="one">%d participante</item>
+        <item quantity="many">%d participantes</item>
+        <item quantity="other">%d participantes</item>
+    </plurals>
+
+    <string name="mode_local">Local</string>
+    <string name="mode_online">Online</string>
+    <string name="mode_local_description">Estão todos juntos: passem o telemóvel de mão em mão e cada pessoa vê o seu resultado em segredo. Quem não estiver presente pode recebê-lo por email ou mensagem.</string>
+    <string name="mode_online_description">Ninguém precisa de se encontrar: cada amigo secreto recebe o resultado por email, SMS ou numa app de mensagens.</string>
+
+    <string name="group_new_title">Novo grupo</string>
+    <string name="group_edit_title">Editar grupo</string>
+    <string name="group_name">Nome do grupo</string>
+    <string name="group_name_hint">ex.: Natal em Família 2026</string>
+    <string name="group_mode">Como vão ser partilhados os resultados?</string>
+    <string name="group_extra_info">Informação adicional (opcional)</string>
+    <string name="group_event_date">Data do evento</string>
+    <string name="group_budget">Orçamento</string>
+    <string name="group_budget_hint">ex.: 20 €</string>
+    <string name="group_location">Local</string>
+    <string name="group_notes">Notas</string>
+    <string name="group_not_found">Este grupo já não existe.</string>
+
+    <string name="action_edit_group">Editar grupo</string>
+    <string name="action_delete_group">Eliminar grupo</string>
+    <string name="action_add_participant">Adicionar participante</string>
+    <string name="action_draw">Sortear</string>
+    <string name="action_redraw">Sortear novamente</string>
+    <string name="action_reset_draw">Anular sorteio</string>
+    <string name="action_reveal">Revelar resultados</string>
+    <string name="action_send_result">Enviar resultado a %1$s</string>
+    <string name="info_budget">Orçamento: %1$s</string>
+    <string name="participants_header">Participantes (%1$d)</string>
+    <string name="participants_empty_title">Ainda não há ninguém</string>
+    <string name="participants_empty_message">Toca em + para adicionar as pessoas que participam.</string>
+    <string name="participant_excludes">Não pode tirar: %1$s</string>
+    <string name="participant_result_delivered">Resultado entregue</string>
+
+    <string name="draw_ready_title">Prontos para o sorteio?</string>
+    <string name="draw_ready_message">Ninguém se tira a si próprio e os Anti-Amigos-Secretos são respeitados.</string>
+    <plurals name="draw_missing_participants">
+        <item quantity="one">Adiciona mais %d participante para iniciar o sorteio.</item>
+        <item quantity="many">Adiciona mais %d participantes para iniciar o sorteio.</item>
+        <item quantity="other">Adiciona mais %d participantes para iniciar o sorteio.</item>
+    </plurals>
+    <string name="draw_done_title">O sorteio está feito!</string>
+    <string name="draw_done_on">Sorteado a %1$s</string>
+    <string name="draw_done_local">Passem o telemóvel para que todos vejam o seu resultado. Quem estiver ausente pode recebê-lo com o botão de enviar.</string>
+    <string name="draw_done_online">Usa o botão de enviar ao lado de cada participante para lhe entregar o resultado.</string>
+    <string name="draw_progress_seen" tools:ignore="PluralsCandidate">%1$d de %2$d já viram o resultado</string>
+    <string name="draw_progress_sent" tools:ignore="PluralsCandidate">%1$d de %2$d resultados enviados</string>
+    <string name="draw_locked_hint">Para adicionar ou remover participantes ou alterar Anti-Amigos-Secretos, anula primeiro o sorteio.</string>
+    <string name="draw_success">🎉 Sorteio feito! Agora é partilhar os resultados.</string>
+    <string name="draw_not_enough" tools:ignore="PluralsCandidate">São precisos pelo menos %1$d participantes.</string>
+    <string name="draw_impossible">Não é possível um sorteio válido. Revê os Anti-Amigos-Secretos de: %1$s</string>
+    <string name="draw_impossible_generic">Não é possível um sorteio válido com os Anti-Amigos-Secretos atuais.</string>
+
+    <string name="send_email">Email</string>
+    <string name="send_sms">SMS</string>
+    <string name="send_share">Outra app…</string>
+    <string name="share_chooser_title">Enviar o resultado com</string>
+    <string name="error_no_app">Não há nenhuma app disponível para enviar o resultado.</string>
+
+    <string name="dialog_delete_group_title">Eliminar grupo?</string>
+    <string name="dialog_delete_group_message">\"%1$s\", os seus participantes e resultados serão eliminados permanentemente.</string>
+    <string name="dialog_reset_title">Anular o sorteio?</string>
+    <string name="dialog_reset_message">Os resultados atuais serão eliminados. Os resultados já enviados deixam de ser válidos.</string>
+    <string name="dialog_redraw_title">Sortear novamente?</string>
+    <string name="dialog_redraw_message">Todos vão ter um novo amigo secreto. Os resultados já vistos ou enviados deixam de ser válidos.</string>
+
+    <string name="participant_new_title">Novo participante</string>
+    <string name="participant_edit_title">Editar participante</string>
+    <string name="participant_name">Nome</string>
+    <string name="participant_email">Email</string>
+    <string name="participant_phone">Telemóvel</string>
+    <string name="participant_contact_hint">Opcional. Usado para enviar o resultado.</string>
+    <string name="participant_wishes">Desejos</string>
+    <string name="participant_wishes_hint">Dá uma dica ao teu amigo secreto 🎁</string>
+    <string name="participant_exclusions_title">Anti-Amigos-Secretos</string>
+    <string name="participant_exclusions_description">Pessoas que este participante não pode tirar, por exemplo o/a companheiro/a ou quem tirou no ano passado.</string>
+    <string name="participant_exclusions_locked">O sorteio já foi feito, anula-o para alterar os Anti-Amigos-Secretos.</string>
+    <string name="participant_exclusions_empty">Adiciona mais participantes para escolher Anti-Amigos-Secretos.</string>
+    <string name="participant_added">%1$s adicionado(a)</string>
+    <string name="action_save_add_another">Guardar e adicionar outro</string>
+    <string name="action_delete_participant">Eliminar participante</string>
+    <string name="dialog_delete_participant_title">Remover participante?</string>
+    <string name="dialog_delete_participant_message">%1$s será removido(a) do grupo.</string>
+    <string name="error_name_required">Indica um nome</string>
+    <string name="error_name_duplicate">Já existe alguém com este nome no grupo</string>
+    <string name="error_email_invalid">Endereço de email inválido</string>
+    <string name="error_phone_invalid">Número de telemóvel inválido</string>
+
+    <string name="reveal_title">Revelar resultados</string>
+    <string name="reveal_instructions">Passa o telemóvel a cada pessoa. Cada uma toca no seu nome e mais ninguém espreita! 🤫</string>
+    <string name="reveal_tap_to_see">Toca para veres o teu resultado</string>
+    <string name="reveal_already_seen">Já viu</string>
+    <string name="reveal_all_done">Já todos sabem a quem oferecer. Feliz Natal! 🎄</string>
+    <string name="reveal_confirm_title">És o/a %1$s?</string>
+    <string name="reveal_confirm_message">Agora só %1$s deve olhar para o ecrã.</string>
+    <string name="reveal_confirm_again">%1$s já viu o resultado. Agora só %1$s deve olhar para o ecrã.</string>
+    <string name="reveal_confirm_button">Sou %1$s</string>
+    <string name="reveal_greeting">Olá %1$s!</string>
+    <string name="reveal_you_are_santa_of">És o amigo secreto de…</string>
+    <string name="reveal_tap_card">Toca para revelar</string>
+    <string name="reveal_wishes">Desejos: %1$s</string>
+    <string name="reveal_keep_secret">Memoriza o nome e guarda segredo!</string>
+    <string name="reveal_hide">Feito, esconder</string>
+
+    <string name="message_subject">🎅 Amigo Secreto – %1$s</string>
+    <string name="message_greeting">Olá %1$s!</string>
+    <string name="message_result">O sorteio do amigo secreto \"%1$s\" já foi feito. És o amigo secreto de: %2$s 🎁</string>
+    <string name="message_wishes">Desejos de %1$s:</string>
+    <string name="message_date">📅 Data: %1$s</string>
+    <string name="message_budget">💶 Orçamento: %1$s</string>
+    <string name="message_location">📍 Local: %1$s</string>
+    <string name="message_notes">📝 Notas: %1$s</string>
+    <string name="message_secret">Shh… é segredo! 🤫</string>
+    <string name="message_signature">Enviado com a app Amigo Secreto</string>
+</resources>

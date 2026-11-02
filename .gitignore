@@ -1,15 +1,69 @@
-*.iml
-.gradle
-/local.properties
-/.idea/caches
-/.idea/libraries
-/.idea/modules.xml
-/.idea/workspace.xml
-/.idea/navEditor.xml
-/.idea/assetWizardSettings.xml
-.DS_Store
-/build
-/captures
-.externalNativeBuild
-.cxx
+# ---------------------------------------------------------------------------
+# Android / Gradle / Kotlin
+# ---------------------------------------------------------------------------
+# Build outputs
+build/
+out/
+release/
+captures/
+*.apk
+*.aab
+*.ap_
+*.dex
+*.class
+output-metadata.json
+
+# Gradle
+.gradle/
+!gradle/wrapper/gradle-wrapper.jar
+
+# Kotlin 2.x compiler caches
+.kotlin/
+
+# Local configuration (SDK path, secrets) — never commit
 local.properties
+secrets.properties
+*.env
+
+# Native builds
+.externalNativeBuild/
+.cxx/
+
+# Signing keys
+*.jks
+*.keystore
+keystore.properties
+
+# Firebase / Google services config (add only if the project needs it)
+google-services.json
+
+# Logs and profiling
+*.log
+*.hprof
+*.trace
+
+# ---------------------------------------------------------------------------
+# Android Studio / IntelliJ
+# Share only the project-wide settings; ignore user and machine specific files.
+# ---------------------------------------------------------------------------
+*.iml
+*.ipr
+*.iws
+.idea/*
+!.idea/codeStyles/
+!.idea/runConfigurations.xml
+!.idea/vcs.xml
+!.idea/gradle.xml
+!.idea/compiler.xml
+
+# Navigation editor temp files
+.navigation/
+
+# ---------------------------------------------------------------------------
+# OS / editors
+# ---------------------------------------------------------------------------
+.DS_Store
+Thumbs.db
+*.swp
+*~
+.vscode/

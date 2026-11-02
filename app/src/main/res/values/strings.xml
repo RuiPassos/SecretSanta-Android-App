@@ -1,3 +1,143 @@
-<resources>
-    <string name="app_name">secretSanta</string>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Secret Santa</string>
+
+    <!-- Common actions -->
+    <string name="action_back">Back</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="action_save">Save</string>
+    <string name="action_ok">OK</string>
+    <string name="action_delete">Delete</string>
+    <string name="action_more">More options</string>
+    <string name="action_pick_date">Pick</string>
+    <string name="action_clear_date">Clear date</string>
+
+    <!-- Groups list -->
+    <string name="groups_title">Secret Santa 🎅</string>
+    <string name="groups_new">New group</string>
+    <string name="groups_empty_title" tools:ignore="Typos">Ho ho ho!</string>
+    <string name="groups_empty_message">Create your first group, add the participants and let the app draw who gives a present to whom.</string>
+    <string name="group_status_drawn">Drawn</string>
+    <plurals name="participant_count">
+        <item quantity="one">%d participant</item>
+        <item quantity="other">%d participants</item>
+    </plurals>
+
+    <!-- Draw modes -->
+    <string name="mode_local">Local</string>
+    <string name="mode_online">Online</string>
+    <string name="mode_local_description">Everybody is together: pass the phone around and each person secretly reveals their result. Anyone who is absent can get it by email or message.</string>
+    <string name="mode_online_description">Nobody needs to meet: every Secret Santa receives the result by email, SMS or a messenger app.</string>
+
+    <!-- Group create / edit -->
+    <string name="group_new_title">New group</string>
+    <string name="group_edit_title">Edit group</string>
+    <string name="group_name">Group name</string>
+    <string name="group_name_hint">e.g. Family Christmas 2026</string>
+    <string name="group_mode">How will the results be shared?</string>
+    <string name="group_extra_info">Additional information (optional)</string>
+    <string name="group_event_date">Event date</string>
+    <string name="group_budget">Budget</string>
+    <string name="group_budget_hint">e.g. 20 €</string>
+    <string name="group_location">Location</string>
+    <string name="group_notes">Notes</string>
+    <string name="group_not_found">This group no longer exists.</string>
+
+    <!-- Group detail -->
+    <string name="action_edit_group">Edit group</string>
+    <string name="action_delete_group">Delete group</string>
+    <string name="action_add_participant">Add participant</string>
+    <string name="action_draw">Draw names</string>
+    <string name="action_redraw">Draw again</string>
+    <string name="action_reset_draw">Reset draw</string>
+    <string name="action_reveal">Reveal results</string>
+    <string name="action_send_result">Send result to %1$s</string>
+    <string name="info_budget">Budget: %1$s</string>
+    <string name="participants_header">Participants (%1$d)</string>
+    <string name="participants_empty_title">Nobody here yet</string>
+    <string name="participants_empty_message">Tap + to add the people taking part.</string>
+    <string name="participant_excludes">Won\'t draw: %1$s</string>
+    <string name="participant_result_delivered">Result delivered</string>
+
+    <string name="draw_ready_title">Ready for the draw?</string>
+    <string name="draw_ready_message">Nobody draws themselves and the Anti-Secret-Santas are respected.</string>
+    <plurals name="draw_missing_participants">
+        <item quantity="one">Add %d more participant to start the draw.</item>
+        <item quantity="other">Add %d more participants to start the draw.</item>
+    </plurals>
+    <string name="draw_done_title">The draw is done!</string>
+    <string name="draw_done_on">Drawn on %1$s</string>
+    <string name="draw_done_local">Pass the phone around so everyone can see their result. Absent people can get it with the send button.</string>
+    <string name="draw_done_online">Use the send button next to each participant to deliver their result.</string>
+    <string name="draw_progress_seen" tools:ignore="PluralsCandidate">%1$d of %2$d have seen their result</string>
+    <string name="draw_progress_sent" tools:ignore="PluralsCandidate">%1$d of %2$d results sent</string>
+    <string name="draw_locked_hint">To add or remove participants or change Anti-Secret-Santas, reset the draw first.</string>
+    <string name="draw_success">🎉 Names drawn! Time to share the results.</string>
+    <string name="draw_not_enough" tools:ignore="PluralsCandidate">You need at least %1$d participants.</string>
+    <string name="draw_impossible">No valid draw is possible. Check the Anti-Secret-Santas of: %1$s</string>
+    <string name="draw_impossible_generic">No valid draw is possible with the current Anti-Secret-Santas.</string>
+
+    <string name="send_email">Email</string>
+    <string name="send_sms">SMS</string>
+    <string name="send_share">Other app…</string>
+    <string name="share_chooser_title">Send the result with</string>
+    <string name="error_no_app">No app available to send the result.</string>
+
+    <string name="dialog_delete_group_title">Delete group?</string>
+    <string name="dialog_delete_group_message">\"%1$s\", its participants and results will be permanently deleted.</string>
+    <string name="dialog_reset_title">Reset the draw?</string>
+    <string name="dialog_reset_message">The current results will be deleted. Results already sent will no longer be valid.</string>
+    <string name="dialog_redraw_title">Draw again?</string>
+    <string name="dialog_redraw_message">Everyone will get a new Secret Santa. Results already seen or sent will no longer be valid.</string>
+
+    <!-- Participant -->
+    <string name="participant_new_title">New participant</string>
+    <string name="participant_edit_title">Edit participant</string>
+    <string name="participant_name">Name</string>
+    <string name="participant_email">Email</string>
+    <string name="participant_phone">Phone</string>
+    <string name="participant_contact_hint">Optional. Used to send the result.</string>
+    <string name="participant_wishes">Wishes</string>
+    <string name="participant_wishes_hint">Give your Secret Santa a hint 🎁</string>
+    <string name="participant_exclusions_title">Anti-Secret-Santas</string>
+    <string name="participant_exclusions_description">People this participant must not draw, e.g. their partner or last year\'s giftee.</string>
+    <string name="participant_exclusions_locked">The draw is done, reset it to change the Anti-Secret-Santas.</string>
+    <string name="participant_exclusions_empty">Add more participants to choose Anti-Secret-Santas.</string>
+    <string name="participant_added">%1$s added</string>
+    <string name="action_save_add_another">Save and add another</string>
+    <string name="action_delete_participant">Delete participant</string>
+    <string name="dialog_delete_participant_title">Remove participant?</string>
+    <string name="dialog_delete_participant_message">%1$s will be removed from the group.</string>
+    <string name="error_name_required">Please enter a name</string>
+    <string name="error_name_duplicate">There is already someone with this name in the group</string>
+    <string name="error_email_invalid">Invalid email address</string>
+    <string name="error_phone_invalid">Invalid phone number</string>
+
+    <!-- Reveal (local mode) -->
+    <string name="reveal_title">Reveal results</string>
+    <string name="reveal_instructions">Pass the phone to each person. They tap their own name and nobody else looks! 🤫</string>
+    <string name="reveal_tap_to_see">Tap to see your result</string>
+    <string name="reveal_already_seen">Already seen</string>
+    <string name="reveal_all_done">Everyone knows their giftee. Merry Christmas! 🎄</string>
+    <string name="reveal_confirm_title">Are you %1$s?</string>
+    <string name="reveal_confirm_message">Only %1$s should look at the screen now.</string>
+    <string name="reveal_confirm_again">%1$s has already seen the result. Only %1$s should look at the screen now.</string>
+    <string name="reveal_confirm_button">I\'m %1$s</string>
+    <string name="reveal_greeting">Hi %1$s!</string>
+    <string name="reveal_you_are_santa_of">You are the Secret Santa of…</string>
+    <string name="reveal_tap_card">Tap to reveal</string>
+    <string name="reveal_wishes">Wishes: %1$s</string>
+    <string name="reveal_keep_secret">Remember the name and keep it a secret!</string>
+    <string name="reveal_hide">Done, hide it</string>
+
+    <!-- Result message (email / SMS) -->
+    <string name="message_subject">🎅 Secret Santa – %1$s</string>
+    <string name="message_greeting">Hi %1$s!</string>
+    <string name="message_result">The Secret Santa draw for \"%1$s\" is done. You are the Secret Santa of: %2$s 🎁</string>
+    <string name="message_wishes">Wishes of %1$s:</string>
+    <string name="message_date">📅 Date: %1$s</string>
+    <string name="message_budget">💶 Budget: %1$s</string>
+    <string name="message_location">📍 Location: %1$s</string>
+    <string name="message_notes">📝 Notes: %1$s</string>
+    <string name="message_secret">Shh… keep it a secret! 🤫</string>
+    <string name="message_signature">Sent with the Secret Santa app</string>
 </resources>
