@@ -173,17 +173,3 @@ sem alterar a UI, por exemplo:
   permitir que cada participante veja só o seu resultado através de um código de convite;
 - **Cloud Functions** para enviar os emails do modo online a partir do servidor (como a app original),
   sem o organizador ver o conteúdo da mensagem.
-
-## Processo de desenvolvimento
-
-Projeto desenvolvido por *vibe coding* com o Claude Code, a partir de um único prompt que pedia a
-engenharia reversa da app original e boas práticas de Android. O processo seguido:
-
-1. Análise da página da app na Google Play (descrição, funcionalidades, notas de versão e críticas, por
-   exemplo o bug relatado de "não conseguir selecionar o último da lista" de exclusões, evitado aqui com uma
-   lista simples de checkboxes);
-2. Desenho da arquitetura e do modelo de dados;
-3. Implementação por camadas (domain → data → UI);
-4. Testes unitários e instrumentados, `lint` sem avisos de código;
-5. Verificação manual num emulador Pixel 8 Pro (Android 14): criação de grupo, participantes, exclusões,
-   sorteio, revelação, envio por email, idioma português e modo escuro.
